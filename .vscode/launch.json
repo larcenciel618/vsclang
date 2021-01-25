@@ -5,7 +5,15 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "gcc - アクティブ ファイルのビルドとデバッグ",
+            "name": "Debug",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/clang",// デバッグする実行形式ファイルのパス
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "terminal": "integrated"// 統合ターミナルを利用
+
+           /*"name": "gcc - アクティブ ファイルのビルドとデバッグ",
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}/${fileBasenameNoExtension}",
@@ -15,7 +23,10 @@
             "environment": [],
             "externalConsole": false,
             "MIMode": "lldb",
-            "preLaunchTask": "C/C++: gcc build active file"
+            "preLaunchTask": "C/C++: gcc build active file",*/
         }
     ]
 }
+
+
+
